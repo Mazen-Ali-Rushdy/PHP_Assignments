@@ -1,14 +1,9 @@
 <?php
 
-$something = "Programming";
-
-echo <<<code
-Hello \PHP\
-We Love $something
-code;
-
-// [1] Fix The Error
-// [2] Remove 2 Characters To Get The Output
+echo (bool)"Hello PHP";
+echo '<br>';
+echo gettype((int)"Hello PHP");
 
 // Needed Output
-// Hello \PHP\ We Love Programming
+// 1
+// integer
