@@ -1,18 +1,16 @@
 <?php 
 
+// Test Case 1
 $a = 100;
 $b = 200;
-$c = 100;
+$c = 300;
 
-/*
-  Check That:
-  Variable "b" Larger Than Variable "a"
-  Variable "a" Identical To Variable "c"
-  Variable "a" Plus Variable "c" Identical To Variable "b"
-*/
-
-if ($b > $a && $a == $c && ($a + $c) == $b) {
-  echo "Yes";
+if ($a > $b) {
+    echo "A Is Larger Than B";
+} elseif ($a > $c) {
+    echo "A Is Larger Than C";
+} else {
+    echo "A Is Not Larger Than B Or C";
 }
 
-// "Yes"
+// A Is Not Larger Than B Or C
