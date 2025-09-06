@@ -1,6 +1,10 @@
 <?php
 
-echo 'Hello "Elzero" \\\\ """ We Love "$$PHP"';
+echo nl2br("We \n Love \n Elzero \n Web \n School");
 
 // Needed Output
-// Hello "Elzero" \\ """ We Love "$$PHP"
+// We
+// Love
+// Elzero
+// Web
+// School
