@@ -1,18 +1,14 @@
 <?php
 
-$txt = <<< 'str'
-Hello "'Elzero'"
-We Love \$Programming$
-Languages Specially "PHP"
-str;
+$something = "Programming";
 
-echo nl2br($txt);
+echo <<<code
+Hello \PHP\
+We Love $something
+code;
 
-
+// [1] Fix The Error
+// [2] Remove 2 Characters To Get The Output
 
 // Needed Output
-/*
-Hello "'Elzero'"
-We Love $Programming$
-Languages Specially "PHP"
-*/
+// Hello \PHP\ We Love Programming
