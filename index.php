@@ -1,15 +1,19 @@
 <?php 
 
-/*
-Here are 10 reserved keywords in PHP
-  1. abstract
-  2. class
-  3. echo
-  4. final
-  5. function
-  6. interface
-  7. namespace
-  8. private
-  9. public
-  10. return
-*/
+$a = "10";
+
+echo (int) $a;
+echo "<br>";
+echo gettype((int) $a);
+echo "<br>";
+
+echo +$a;
+echo "<br>";
+echo gettype(+$a);
+// Needed Ouput
+// 10
+// "integer"
+// 10
+// "integer"
+// 10
+// "integer"
