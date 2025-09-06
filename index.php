@@ -1,5 +1,6 @@
 <?php
 
-echo gettype(100);
-echo "<br>";
-var_dump(100);
+echo 'Hello "Elzero" \\\\ """ We Love "$$PHP"';
+
+// Needed Output
+// Hello "Elzero" \\ """ We Love "$$PHP"
