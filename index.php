@@ -1,16 +1,9 @@
 <?php 
+// Code 1
+$a = @$b or die("Custom Error");
 
-$a = "Elzero";
-$b = "Web";
-$c = "School";
+// Code 2
+$f = @file("Not_A_File") or die("Custom Error");
 
-// Method One
-$d = "$a $b $c";
-
-// Method Two
-$d = "{$a} ${b} ${c}";
-
-// Method Three
-$d = $a . ' ' . $b . ' ' . $c;
-
-echo $d; // Elzero Web School
+// Code 3
+@include("Not_A_File") or die("Custom Error");
