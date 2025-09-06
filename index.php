@@ -1,16 +1,28 @@
-<?php 
+<form action="" method="POST">
+  <input type="text" name="user">
+  <input type="submit" value="Send">
+</form>
 
-// Test Case 1
-$a = 100;
-$b = 200;
-$c = 300;
+<?php
 
-if ($a > $b) {
-    echo "A Is Larger Than B";
-} elseif ($a > $c) {
-    echo "A Is Larger Than C";
-} else {
-    echo "A Is Not Larger Than B Or C";
+$admins = ["Osama", "Ahmed", "Sayed"];
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST['user']) && !empty($_POST['user'])) {
+        $username = htmlspecialchars($_POST['user']); // Sanitize input
+
+        echo "The Request Method Is Post And Username Is " . $username . "<br>";
+
+        if (in_array($username, $admins)) {
+            echo "This Username " . $username . " Is Admin";
+        }
+    } else {
+        echo "Please enter a username.";
+    }
 }
 
-// A Is Not Larger Than B Or C
+// Input Name "Osama"
+
+// Needed Output
+// "The Request Method Is Post And Username Is Osama"
+// "This Username Osama Is Admin"
