@@ -1,9 +1,18 @@
 <?php 
-// Code 1
-$a = @$b or die("Custom Error");
 
-// Code 2
-$f = @file("Not_A_File") or die("Custom Error");
+$a = 100;
+$b = 200;
+$c = 100;
 
-// Code 3
-@include("Not_A_File") or die("Custom Error");
+/*
+  Check That:
+  Variable "b" Larger Than Variable "a"
+  Variable "a" Identical To Variable "c"
+  Variable "a" Plus Variable "c" Identical To Variable "b"
+*/
+
+if ($b > $a && $a == $c && ($a + $c) == $b) {
+  echo "Yes";
+}
+
+// "Yes"
