@@ -1,19 +1,16 @@
 <?php 
 
-$points = 10;
+$a = "Elzero";
+$b = "Web";
+$c = "School";
 
-// Write Your Code Here
-++$points;
-++$points;
-++$points;
+// Method One
+$d = "$a $b $c";
 
-echo $points; // 13
+// Method Two
+$d = "{$a} ${b} ${c}";
 
-// Write Your Code Here
---$points;
---$points;
---$points;
---$points;
---$points;
+// Method Three
+$d = $a . ' ' . $b . ' ' . $c;
 
-echo $points; // 8;
+echo $d; // Elzero Web School
