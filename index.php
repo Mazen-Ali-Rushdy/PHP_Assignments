@@ -1,15 +1,19 @@
 <?php 
 
-$a = 10;
-$b = 20;
-$c = 15;
+$points = 10;
 
-var_dump($a < $b); // True
-var_dump($c > $a); // True
-var_dump($a != $b); // True
-var_dump($a <> $b); // True
-var_dump($a !== $c); // True
-var_dump($a <= $c); // True
-var_dump(gettype($a) === gettype($b)); // True
-var_dump(gettype($a) == gettype($b)); // True
-var_dump(gettype((float) $a) != gettype($b)); // True
+// Write Your Code Here
+++$points;
+++$points;
+++$points;
+
+echo $points; // 13
+
+// Write Your Code Here
+--$points;
+--$points;
+--$points;
+--$points;
+--$points;
+
+echo $points; // 8;
