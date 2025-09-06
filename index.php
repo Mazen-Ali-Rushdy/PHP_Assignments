@@ -1,28 +1,31 @@
-<form action="" method="POST">
-  <input type="text" name="user">
-  <input type="submit" value="Send">
-</form>
-
 <?php
 
-$admins = ["Osama", "Ahmed", "Sayed"];
+$a = 30;
+$b = 20;
+$c = 10;
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST['user']) && !empty($_POST['user'])) {
-        $username = htmlspecialchars($_POST['user']); // Sanitize input
+/*
 
-        echo "The Request Method Is Post And Username Is " . $username . "<br>";
+if ($a + $b === $c) {
 
-        if (in_array($username, $admins)) {
-            echo "This Username " . $username . " Is Admin";
-        }
-    } else {
-        echo "Please enter a username.";
-    }
+  echo "A + B = C";
+
+} elseif ($a + $c === $b) {
+
+  echo "A + C = B";
+
+} elseif ($b + $c === $a) {
+
+  echo "B + C = A";
+
+} else {
+
+  echo "The End";
+
 }
 
-// Input Name "Osama"
+*/
+echo ($a + $b === $c) ? "A + B = C" : (($a + $c === $b) ? "A + C = B" : (($b + $c === $a) ? "B + C = A" : "The End"));
 
-// Needed Output
-// "The Request Method Is Post And Username Is Osama"
-// "This Username Osama Is Admin"
+// Output
+// "B + C = A"
