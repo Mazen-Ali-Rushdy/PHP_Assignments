@@ -1,14 +1,7 @@
 <?php 
 
-$name = "elzero";
-$$name = "Web";
+$a = 200;
+$b = &$a;
+$a = 100;
 
-echo $$name;
-echo "<br>";
-echo $elzero;
-echo "<br>";
-echo "${$name}";
-echo "<br>";
-echo "{$$name}";
-echo "<br>";
-echo "Web";
+echo $b; // 100
