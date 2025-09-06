@@ -1,70 +1,20 @@
-<?php
-
-$arr = [
-    "FrontEnd" => [
-        "HTML",
-        "CSS",
-        "JS" => [
-            "Vuejs" => [
-                2 => "v2",
-                3 => "v3"
-            ],
-            "Reactjs",
-            "Svelte"
-            ],
-
-        "BackEnd" => [
-            "PHP", 
-            "MySQL",
-            "Security"
-        ],
-
-        "Git",
-        "GitHub",
-        "Testing" => [
-            "Unit Testing",
-            "End To End",
-            "Integration"
-        ]
-    ]
-];
-
-echo "<pre>";
-print_r($arr);
-echo "</pre>";
-
-// Array
-// (
-//   [FrontEnd] => Array
-//     (
-//       [0] => HTML
-//       [1] => CSS
-//       [JS] => Array
-//         (
-//           [Vuejs] => Array
-//             (
-//               [2] => v2
-//               [3] => v3
-//             )
-
-//           [0] => Reactjs
-//           [1] => Svelte
-//         )
-//     )
-
-//   [BackEnd] => Array
-//     (
-//       [0] => PHP
-//       [1] => MySQL
-//       [2] => Security
-//     )
-
-//   [0] => Git
-//   [1] => Github
-//   [Testing] => Array
-//     (
-//       [0] => Unit Testing
-//       [1] => End To End
-//       [2] => Integration
-//     )
-// )
+<?php 
+$var = "Elzero Courses";
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elzero Courses">
+    <title>Welcome To <?= $var ?></title>
+  </head>
+  <body>
+    <h1><?= $var ?></h1>
+    <p>Here In <?= $var ?> We Provide Front-End And Back-End Courses</p>
+    <hr>
+    <div><?= $var ?> Is The What You Need.</div>
+    <footer>All Right Reserved To <?= $var ?></footer>
+  </body>
+</html>
