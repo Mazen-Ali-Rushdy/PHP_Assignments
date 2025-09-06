@@ -1,31 +1,53 @@
 <?php
 
-$a = 30;
-$b = 20;
-$c = 10;
+$genre = "Hack And Slash";
+
+switch ($genre) {
+  case "RPG":
+    echo "I Recommend Ys Games";
+    break;
+  case "Hack And Slash":
+    echo "I Recommend Castlevania Games";
+    break;
+  case "FPS":
+    echo "I Recommend Uncharted Games";
+    break;
+  case "Platform":
+  case "Puzzle": // Combining cases for the same output
+    echo "I Recommend Megaman Games";
+    break;
+  default:
+    echo "I Recommend Shadow Of Mordor And Shadow Of War";
+}
 
 /*
+if ($genre === "RPG") {
 
-if ($a + $b === $c) {
+  echo "I Recommend Ys Games";
 
-  echo "A + B = C";
+} elseif ($genre === "Hack And Slash") {
 
-} elseif ($a + $c === $b) {
+  echo "I Recommend Castlevania Games";
 
-  echo "A + C = B";
+} elseif ($genre === "FPS") {
 
-} elseif ($b + $c === $a) {
+  echo "I Recommend Uncharted Games";
 
-  echo "B + C = A";
+} elseif ($genre === "Platform") {
+
+  echo "I Recommend Megaman Games";
+
+} elseif ($genre === "Puzzle") {
+
+  echo "I Recommend Megaman Games";
 
 } else {
 
-  echo "The End";
+  echo "I Recommend Shadow Of Mordor And Shadow Of War";
 
 }
+  */
 
-*/
-echo ($a + $b === $c) ? "A + B = C" : (($a + $c === $b) ? "A + C = B" : (($b + $c === $a) ? "B + C = A" : "The End"));
 
-// Output
-// "B + C = A"
+// Needed Output
+// "I Recommend Castlevania Games"
