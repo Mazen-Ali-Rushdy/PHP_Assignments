@@ -1,10 +1,18 @@
 <?php
 
-echo nl2br("We \n Love \n Elzero \n Web \n School");
+$txt = <<< 'str'
+Hello "'Elzero'"
+We Love \$Programming$
+Languages Specially "PHP"
+str;
+
+echo nl2br($txt);
+
+
 
 // Needed Output
-// We
-// Love
-// Elzero
-// Web
-// School
+/*
+Hello "'Elzero'"
+We Love $Programming$
+Languages Specially "PHP"
+*/
