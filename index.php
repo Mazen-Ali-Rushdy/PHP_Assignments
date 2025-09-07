@@ -73,3 +73,23 @@ echo "@@@@@@@@@@@<br>";
 // "The Name Is Sayed And I Need 150 Pound From Him"
 // "The Name Is Osama And I Need 100 Pound From Him"
 // "The Name Is Maher And I Need 250 Pound From Him"
+
+// Assignment 4
+$nums = [1, 13, 12, 20, 51, 17, 30];
+
+$i = 0;
+
+while ($i < count($nums)) {
+  if ($nums[$i] % 2 == 0) {
+    echo $nums[$i] / 2;
+    echo "<br>";
+  }
+  $i++;
+}
+echo "@@@@@@@@@@@<br>";
+
+// Output
+// 6
+// 10
+// 15
+
