@@ -1,33 +1,19 @@
 <?php
 
-$day = "Sat";
+$index = 10;
 
-/*
-switch($day) {
-  case "Sat":
-  case "Sun":
-  case "Mon":
-    echo "We Are Open All The Day";
-    break;
-  case "Tue":
-  case "Wed":
-    echo "We Are Open From 08:12";
-    break;
-  case "Thu":
-  case "Fri":
-    echo "We Are Closed";
-    break;
-  default:
-    echo "Unknown Day";
+for ($i = 10; $i >= 1; $i--) {
+  echo "$i<br>";
 }
-*/
 
-if ($day === "Sat" || $day === "Sun" || $day === "Mon") {
-  echo "We Are Open All The Day";
-} elseif ($day === "Tue" || $day === "Wed") {
-  echo "We Are Open From 08:12";
-} elseif ($day === "Thu" || $day === "Fri") {
-  echo "We Are Closed";
-} else {
-  echo "Unknown Day";
-}
+// Needed Output
+// 10
+// 9
+// 8
+// 7
+// 6
+// 5
+// 4
+// 3
+// 2
+// 1
