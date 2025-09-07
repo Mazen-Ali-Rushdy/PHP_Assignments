@@ -33,6 +33,7 @@ for ($i = $start; $i >= $stop; $i--) {
   }
   echo $i . "<br>";
 }
+echo "@@@@@@@@@@@<br>";
 
 // Needed Output
 // 10
@@ -43,3 +44,18 @@ for ($i = $start; $i >= $stop; $i--) {
 // 05
 // 04
 // 03
+
+// Assignment 3
+$start = 0;
+$mix = [1, 2, 3, "A", "B", "C", 4];
+
+for ($i = $start; $i < count($mix); $i++) {
+  if ($mix[$i] == $mix[$start] || is_string($mix[$i])) continue;
+  echo $mix[$i] . "<br>";
+}
+echo "@@@@@@@@@@@<br>";
+
+// Output
+// 2
+// 3
+// 4
