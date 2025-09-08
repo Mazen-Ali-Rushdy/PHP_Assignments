@@ -73,3 +73,13 @@ function calculate(int $num_one, int $num_two) : float {
 
 echo calculate(20, 10); // 30
 echo gettype(calculate(20, 10)); // Double
+
+// ######### Assignment 3 #########
+$greet = function ($name) {
+  return "Hello $name";
+} 
+
+// $greet = fn ($name) => "Hello $name";
+
+// Needed Output
+echo $greet("Osama"); // Greetings
