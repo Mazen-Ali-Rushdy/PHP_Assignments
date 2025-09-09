@@ -37,3 +37,15 @@ $str = "<div><b>Elzero</b></div>";
 echo strip_tags($str, "<b>") . "<br>";
 
 // <b>Elzero</b>
+
+// **** Assignment 3 ****
+$str = "Elzero Web School";
+$e = "e";
+$o = "O";
+$four = 4;
+
+echo substr_count($str, $e, $four) . "<br>";
+echo substr_count($str, $e) . "<br>";
+
+// 1
+// 2
