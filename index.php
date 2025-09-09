@@ -13,4 +13,11 @@ $str = "El%er0";
 
 $str = str_replace([$str[(int)$num_two], $str[$num_one]], [$let_two, $let_one], $str);
 
-echo $str; // Elzero
+echo $str . "<br>"; // Elzero
+
+// **** Assignment 2 ****
+$str = "Orezle";
+
+echo ucfirst(strrev(strtolower($str))) . "<br>";
+
+// Elzero
