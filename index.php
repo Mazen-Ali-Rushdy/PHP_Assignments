@@ -49,3 +49,12 @@ echo substr_count($str, $e) . "<br>";
 
 // 1
 // 2
+
+// **** Assignment 3 ****
+$chars = ["E", "l", "z", "e", "r", "o"];
+
+echo implode($chars) . "<br>";
+
+// Output
+// "Elzero"
+
