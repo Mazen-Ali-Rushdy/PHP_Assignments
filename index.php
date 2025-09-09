@@ -30,3 +30,10 @@ $char = "_";
 echo str_repeat(strtolower($str) . $char, $num) . '<br>';
 
 // aaa_aaa_aaa_
+
+// **** Assignment 3 ****
+$str = "<div><b>Elzero</b></div>";
+
+echo strip_tags($str, "<b>") . "<br>";
+
+// <b>Elzero</b>
