@@ -101,3 +101,29 @@ echo array_reduce($nums_without_5, fn ($acc, $curr) => $acc + $curr) . "<br>";
 
 // Output
 // 100
+
+// **** Assignment 3 ****
+$chars = ["A", "B", "C", "D", "E"];
+$char = "@@";
+$zero = 0;
+
+$new_arr = array_pad($chars, (count($chars) * strlen($char)), $char[$zero]);
+
+echo "<pre>";
+print_r($new_arr);
+echo "</pre>";
+
+// Output
+// Array
+// (
+//   [0] => A
+//   [1] => B
+//   [2] => C
+//   [3] => D
+//   [4] => E
+//   [5] => @
+//   [6] => @
+//   [7] => @
+//   [8] => @
+//   [9] => @
+// )
