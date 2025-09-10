@@ -80,7 +80,7 @@ echo "</pre>";
 //   [ag] => Ahmed Gamal
 // )
 
-// **** Assignment 3 ****
+// **** Assignment 4 ****
 $nums = [10, 20, 30];
 
 echo array_sum($nums) . "<br>";
@@ -92,7 +92,7 @@ echo $product . "<br>";
 // 60
 // 60
 
-// **** Assignment 3 ****
+// **** Assignment 5 ****
 $nums = [5, 10, 20, 5, 30, 40];
 
 $nums_without_5 = array_filter($nums, fn ($num) => $num != 5);
@@ -102,7 +102,7 @@ echo array_reduce($nums_without_5, fn ($acc, $curr) => $acc + $curr) . "<br>";
 // Output
 // 100
 
-// **** Assignment 3 ****
+// **** Assignment 6 ****
 $chars = ["A", "B", "C", "D", "E"];
 $char = "@@";
 $zero = 0;
@@ -127,3 +127,30 @@ echo "</pre>";
 //   [8] => @
 //   [9] => @
 // )
+
+// **** Assignment 7 ****
+$names = ["Osama", "Ahmed", "Sayed", "Mahmoud", "Ali"];
+
+// Write Line Here
+next($names);
+// Write Line Here
+next($names);
+
+echo current($names) . "<br>"; // "Sayed"
+
+// Write Line Here
+end($names);
+
+echo current($names) . "<br>"; // "Ali"
+
+// Write Line Here
+reset($names);
+
+echo current($names) . "<br>"; // "Osama"
+
+end($names);
+// Write Line Here
+prev($names);
+// Write Line Here
+
+echo current($names) . "<br>"; // "Mahmoud"
