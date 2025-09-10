@@ -66,7 +66,7 @@ echo "</pre>";
 //   [1024] => callback
 // )
 
-// Assignment 3
+// Assignment 4
 $url1 = "http://www.elz ero.org";
 $url2 = "http://¥elzero.org";
 $url3 = "https://elzero.org";
@@ -82,3 +82,21 @@ echo filter_var($url4, FILTER_VALIDATE_URL) ? "A Valid URL<br>" : "Not A Valid U
 // "Not A Valid URL"
 // "A Valid URL"
 // "Not A Valid URL"
+
+
+// Assignment 5
+$url1 = "http://www.elz ero.org";
+$url2 = "http://¥elzero.org";
+$url3 = "https://elzero.org";
+$url4 = "https://elzero.o¥rg";
+
+echo filter_var($url1, FILTER_SANITIZE_URL) . "<br>";
+echo filter_var($url1, FILTER_SANITIZE_URL) . "<br>";
+echo filter_var($url1, FILTER_SANITIZE_URL) . "<br>";
+echo filter_var($url1, FILTER_SANITIZE_URL) . "<br>";
+
+// Output
+// http://www.elzero.org
+// http://elzero.org
+// https://elzero.org
+// https://elzero.o
