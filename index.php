@@ -154,3 +154,11 @@ prev($names);
 // Write Line Here
 
 echo current($names) . "<br>"; // "Mahmoud"
+
+// **** Assignment 7 ****
+$nums = [10, 100, -20, 50, 30];
+
+echo array_reduce($nums, fn ($acc, $curr) => $acc > $curr ? $acc : $curr);
+
+// Output
+// 100
