@@ -37,3 +37,22 @@ echo "</pre>";
 //       [sm] => Sayed Mohamed
 //     )
 // )
+
+// **** Assignment 2 ****
+$codes = ["H", "C", "J"];
+$means = ["HTML", "CSS", "JavaScript"];
+
+$new_arr = array_change_key_case(array_combine($codes, $means));
+
+echo "<pre>";
+print_r($new_arr);
+echo "</pre>";
+
+
+// Output
+// Array
+// (
+//   [h] => HTML
+//   [c] => CSS
+//   [j] => JavaScript
+// )
