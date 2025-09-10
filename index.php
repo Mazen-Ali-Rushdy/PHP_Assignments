@@ -56,3 +56,26 @@ echo "</pre>";
 //   [c] => CSS
 //   [j] => JavaScript
 // )
+
+// **** Assignment 3 ****
+$friends = [
+  "Ahmed Gamal" => "AG",
+  "Osama Mohamed" => "OM",
+  "Mahmoud Gamal" => "MG",
+  "Ahmed Samy" => "AS"
+];
+
+$new_arr = array_change_key_case(array_flip(array_reverse($friends, true)));
+
+echo "<pre>";
+print_r($new_arr);
+echo "</pre>";
+
+// Output
+// Array
+// (
+//   [as] => Ahmed Samy
+//   [mg] => Mahmoud Gamal
+//   [om] => Osama Mohamed
+//   [ag] => Ahmed Gamal
+// )
