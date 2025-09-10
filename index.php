@@ -91,3 +91,13 @@ echo $product . "<br>";
 // Output
 // 60
 // 60
+
+// **** Assignment 3 ****
+$nums = [5, 10, 20, 5, 30, 40];
+
+$nums_without_5 = array_filter($nums, fn ($num) => $num != 5);
+
+echo array_reduce($nums_without_5, fn ($acc, $curr) => $acc + $curr) . "<br>";
+
+// Output
+// 100
