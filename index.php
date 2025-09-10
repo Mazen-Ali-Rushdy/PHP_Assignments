@@ -79,3 +79,15 @@ echo "</pre>";
 //   [om] => Osama Mohamed
 //   [ag] => Ahmed Gamal
 // )
+
+// **** Assignment 3 ****
+$nums = [10, 20, 30];
+
+echo array_sum($nums) . "<br>";
+
+$product = array_reduce($nums, fn ($acc, $curr) => $acc + $curr);
+echo $product . "<br>";
+
+// Output
+// 60
+// 60
