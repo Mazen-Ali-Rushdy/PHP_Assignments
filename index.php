@@ -26,3 +26,6 @@ echo "Your Color Is " . $cookie_cont["site"]["color"] . " And Your Font Is " . $
 //     )
 // )
 // "Your Color Is blue And Your Font Is Swat"
+
+// Assignment 3
+setcookie("site[layout]", "Boxed", time() - 10, "/");
